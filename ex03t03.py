@@ -1,4 +1,10 @@
-n = int(input("Type a number to make a triangle: "))
+rows = 4
+cols = 8
 
-for i in range(1, n + 1):
-    print("*" * i)
+for row in range(rows):
+    for col in range(cols):
+        if (row + col) % 2 == 0:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
